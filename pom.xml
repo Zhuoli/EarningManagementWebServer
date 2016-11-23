@@ -8,5 +8,11 @@
     <artifactId>EarningManagementWebServer</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    
+    <!-- https://mvnrepository.com/artifact/org.grails/grails-core -->
+    <dependency>
+        <groupId>org.grails</groupId>
+        <artifactId>grails-core</artifactId>
+        <version>3.2.1</version>
+    </dependency>
+
 </project>
