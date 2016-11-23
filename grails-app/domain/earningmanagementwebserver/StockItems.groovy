@@ -6,7 +6,7 @@ class StockItems {
 
     String Symbol;
     int Shares;
-    LocalDateTime ReportDate;
+    Date ReportDate;
     Float SharedAverageCost;
 
 
