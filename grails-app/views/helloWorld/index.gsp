@@ -5,7 +5,9 @@
     <title>Render Domain</title>
 </head>
 <body>
-Symbol: <g:fieldValue bean="${share}" field="Symbol"/><br/>
-Shares: <g:fieldValue bean="${share}" field="Shares"/><br/>
+Symbol: <g:fieldValue bean="${share}" field="symbol"/><br/>
+Shares: <g:fieldValue bean="${share}" field="shares"/><br/>
+Date: <g:fieldValue bean="${share}" field="reportDate"/><br/>
+Average Cost: <g:fieldValue bean="${share}" field="sharedAverageCost"/><br/>
 </body>
 </html>

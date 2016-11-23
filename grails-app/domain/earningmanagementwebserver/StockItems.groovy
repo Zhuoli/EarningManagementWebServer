@@ -19,6 +19,7 @@ class StockItems {
         sharedAverageCost blank: false, nullable: true
     }
     static mapping = {
+        version false
         id generator:'assigned', name:'symbol'
     }
 }
