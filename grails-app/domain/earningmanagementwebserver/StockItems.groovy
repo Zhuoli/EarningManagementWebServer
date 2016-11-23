@@ -1,16 +1,24 @@
 package earningmanagementwebserver
 
-import java.time.LocalDateTime
+import java.time.LocalDate
 
+import grails.rest.*
+
+@Resource(uri='/StockItems')
 class StockItems {
 
-    String Symbol;
-    int Shares;
-    Date ReportDate;
-    Float SharedAverageCost;
-
+    String symbol
+    int shares
+    LocalDate reportDate
+    Float sharedAverageCost
 
     static constraints = {
-
+        symbol blank: false, nullable: false
+        shares blank: false, nullable: false
+        reportDate blank: false, nullable: true
+        sharedAverageCost blank: false, nullable: true
+    }
+    static mapping = {
+        id generator:'assigned', name:'symbol'
     }
 }
