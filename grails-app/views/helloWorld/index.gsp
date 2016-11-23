@@ -2,9 +2,10 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Zhuoli</title>
+    <title>Render Domain</title>
 </head>
 <body>
-Hello World, this is your first page.
+Symbol: <g:fieldValue bean="${share}" field="Symbol"/><br/>
+Shares: <g:fieldValue bean="${share}" field="Shares"/><br/>
 </body>
 </html>
