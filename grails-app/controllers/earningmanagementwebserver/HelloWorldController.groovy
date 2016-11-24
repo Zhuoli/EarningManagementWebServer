@@ -13,7 +13,7 @@ class HelloWorldController {
         stockItems1.save()
         def share = StockItems.findBySymbolLike('JD');
 
-        [ share:share ]
+        [ viewShare:share ]
     }
 
     def secondAction() {

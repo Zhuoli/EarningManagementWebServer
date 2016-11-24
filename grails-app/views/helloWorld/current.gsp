@@ -5,9 +5,12 @@
     <title>Render Domain</title>
 </head>
 <body>
-Symbol: <g:fieldValue bean="${share}" field="symbol"/><br/>
-Shares: <g:fieldValue bean="${share}" field="shares"/><br/>
-Date: <g:fieldValue bean="${share}" field="reportDate"/><br/>
-Average Cost: <g:fieldValue bean="${share}" field="sharedAverageCost"/><br/>
+    <table border="1">
+        <tr>
+            <td>Symbol: <g:fieldValue bean="${viewShare}" field="symbol"/></td>
+            <td>Date: <g:fieldValue bean="${viewShare}" field="reportDate"/></td>
+            <td>Average Cost: <g:fieldValue bean="${viewShare}" field="sharedAverageCost"/></td>
+        </tr>
+    </table>
 </body>
 </html>
