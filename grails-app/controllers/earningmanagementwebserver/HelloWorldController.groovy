@@ -9,11 +9,13 @@ class HelloWorldController {
     }
 
     def current() {
-        StockItems stockItems1 = new StockItems(symbol: 'JD', shares: 50, reportDate: LocalDate.now(), sharedAverageCost: 12.5)
-        stockItems1.save()
-        def share = StockItems.findBySymbolLike('JD');
+//        StockItems stockItems1 = new StockItems(symbol: 'JD', shares: 50, reportDate: LocalDate.now(), sharedAverageCost: 12.5)
+//        stockItems1.save()
+//        def share = StockItems.findBySymbolLike('JD');
 
-        [ viewShare:share ]
+        def shares = StockItems.list()
+
+        [viewShares : shares ]
 
     }
 

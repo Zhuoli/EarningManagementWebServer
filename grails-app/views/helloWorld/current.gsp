@@ -6,15 +6,18 @@
 </head>
 <body>
     <table border="1">
-        <tr>
-            <td>Symbol: <g:fieldValue bean="${viewShare}" field="symbol"/></td>
-            <td>Date: <g:fieldValue bean="${viewShare}" field="reportDate"/></td>
-            <td>Average Cost: <g:fieldValue bean="${viewShare}" field="sharedAverageCost"/></td>
-        </tr>
+        <g:each in="${viewShares}" var="viewShare">
+            <tr>
+                <td>Symbol: <g:fieldValue bean="${viewShare}" field="symbol"/></td>
+                <td>Shares: <g:fieldValue bean="${viewShare}" field="shares"/></td>
+                <td>Date: <g:fieldValue bean="${viewShare}" field="reportDate"/></td>
+                <td>Average Cost: <g:fieldValue bean="${viewShare}" field="sharedAverageCost"/></td>
+            </tr>
+        </g:each>
     </table>
-<g:form name="testForm" controller="HelloWorldController" action="current">
+<g:form name="testForm" controller="HelloWorld" action="stockResult">
     <g:textField name="symbol" value="${Input1}">  </g:textField>
-    <g:actionSubmit value="Send to controller"  action="current"/>
+    <g:actionSubmit value="Send to controller"  action="stockResult"/>
 </g:form>
 </body>
 </html>
