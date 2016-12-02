@@ -20,7 +20,8 @@ endpoints:
     enabled: false
     jmx:
         enabled: true
-
+server:
+    port: 80
 ---
 grails:
     mime:
@@ -95,20 +96,20 @@ dataSource:
 environments:
     development:
         dataSource:
-            dbCreate: create
+            dbCreate: create-drop
             url: jdbc:mysql://earningmanagement.cqxahokpf4dx.us-west-2.rds.amazonaws.com:3306/EarningManagerDB
             username: zhuoli
             password: cp8482617
     test:
         dataSource:
             dbCreate: update
-            url: jdbc:mysql://earningmanagement.cqxahokpf4dx.us-west-2.rds.amazonaws.com:3306
+            url: jdbc:mysql://earningmanagement.cqxahokpf4dx.us-west-2.rds.amazonaws.com:3306/EarningManagerDB
             username: zhuoli
             password: cp8482617
     production:
         dataSource:
             dbCreate: update
-            url: jdbc:mysql://earningmanagement.cqxahokpf4dx.us-west-2.rds.amazonaws.com:3306
+            url: jdbc:mysql://earningmanagement.cqxahokpf4dx.us-west-2.rds.amazonaws.com:3306/EarningManagerDB
             username: zhuoli
             password: cp8482617
             properties:

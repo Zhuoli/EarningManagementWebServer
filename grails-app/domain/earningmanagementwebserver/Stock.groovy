@@ -16,8 +16,9 @@ class Stock {
     static constraints = {
         symbol blank: false, nullable: false
         shares blank: false, nullable: false
+        sharedAverageCost blank: false, nullable: false
         reportDate blank: false, nullable: true
-        sharedAverageCost blank: false, nullable: true
+        targetPrice blank: false, nullable: true
     }
     static mapping = {
         version false
