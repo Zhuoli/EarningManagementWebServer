@@ -1,7 +1,5 @@
 package earningmanagementwebserver
 
-import java.time.LocalDate
-
 class HelloWorldController {
 
     def index() {
@@ -9,11 +7,11 @@ class HelloWorldController {
     }
 
     def current() {
-//        StockItems stockItems1 = new StockItems(symbol: 'JD', shares: 50, reportDate: LocalDate.now(), sharedAverageCost: 12.5)
+//        Stock stockItems1 = new Stock(symbol: 'JD', shares: 50, reportDate: LocalDate.now(), sharedAverageCost: 12.5)
 //        stockItems1.save()
-//        def share = StockItems.findBySymbolLike('JD');
+//        def share = Stock.findBySymbolLike('JD');
 
-        def shares = StockItems.list()
+        def shares = Stock.list()
 
         [viewShares : shares ]
 
@@ -25,7 +23,7 @@ class HelloWorldController {
 
 
     def stockResult(){
-        def share = StockItems.findBySymbolLike(params.symbol);
+        def share = Stock.findBySymbolLike(params.symbol);
         [ viewShare:share ]
     }
 }

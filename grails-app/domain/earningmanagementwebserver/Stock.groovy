@@ -4,13 +4,14 @@ import java.time.LocalDate
 
 import grails.rest.*
 
-@Resource(uri='/StockItems')
-class StockItems {
+@Resource(uri='/Stock')
+class Stock {
 
     String symbol
     int shares
     LocalDate reportDate
     Float sharedAverageCost
+    Float targetPrice
 
     static constraints = {
         symbol blank: false, nullable: false
