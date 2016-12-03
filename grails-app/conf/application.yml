@@ -96,7 +96,7 @@ dataSource:
 environments:
     development:
         dataSource:
-            dbCreate: create-drop
+            dbCreate: update
             url: jdbc:mysql://earningmanagement.cqxahokpf4dx.us-west-2.rds.amazonaws.com:3306/EarningManagerDB
             username: zhuoli
             password: cp8482617
