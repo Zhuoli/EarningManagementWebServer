@@ -9,7 +9,7 @@ class Stock {
 
     String symbol
     int shares
-    LocalDate reportDate
+    String reportDate
     Float sharedAverageCost
     Float targetPrice
 

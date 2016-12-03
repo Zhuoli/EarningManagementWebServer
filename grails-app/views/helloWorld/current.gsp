@@ -6,12 +6,18 @@
 </head>
 <body>
     <table border="1">
+      <tr>
+        <th>Symbol</th>
+        <th>Shares</th>
+        <th>Earning Report Date</th>
+        <th>Average Cost</th>
+      </tr>
         <g:each in="${viewShares}" var="viewShare">
             <tr>
-                <td>Symbol: <g:fieldValue bean="${viewShare}" field="symbol"/></td>
-                <td>Shares: <g:fieldValue bean="${viewShare}" field="shares"/></td>
-                <td>Earning Report Date: <g:fieldValue bean="${viewShare}" field="reportDate"/></td>
-                <td>Average Cost: <g:fieldValue bean="${viewShare}" field="sharedAverageCost"/></td>
+                <td><g:fieldValue bean="${viewShare}" field="symbol"/></td>
+                <td><g:fieldValue bean="${viewShare}" field="shares"/></td>
+                <td><g:fieldValue bean="${viewShare}" field="reportDate"/></td>
+                <td><g:fieldValue bean="${viewShare}" field="sharedAverageCost"/></td>
             </tr>
         </g:each>
     </table>
