@@ -96,13 +96,13 @@ dataSource:
 environments:
     development:
         dataSource:
-            dbCreate: update
+            dbCreate: create
             url: jdbc:mysql://earningmanagement.cqxahokpf4dx.us-west-2.rds.amazonaws.com:3306/EarningManagerDB
             username: zhuoli
             password: cp8482617
     test:
         dataSource:
-            dbCreate: update
+            dbCreate: create-drop
             url: jdbc:mysql://earningmanagement.cqxahokpf4dx.us-west-2.rds.amazonaws.com:3306/EarningManagerDB
             username: zhuoli
             password: cp8482617

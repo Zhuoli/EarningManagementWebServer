@@ -9,6 +9,7 @@
       <tr>
         <th>Symbol</th>
         <th>Shares</th>
+        <th>Current price</th>
         <th>Earning Report Date</th>
         <th>Average Cost</th>
       </tr>
@@ -16,6 +17,7 @@
             <tr>
                 <td><g:fieldValue bean="${viewShare}" field="symbol"/></td>
                 <td><g:fieldValue bean="${viewShare}" field="shares"/></td>
+                <td><g:fieldValue bean="${viewShare}" field="currentPrice"/></td>
                 <td><g:fieldValue bean="${viewShare}" field="reportDate"/></td>
                 <td><g:fieldValue bean="${viewShare}" field="sharedAverageCost"/></td>
             </tr>
