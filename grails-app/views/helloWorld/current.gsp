@@ -5,6 +5,7 @@
     <title>Render Domain</title>
 </head>
 <body>
+    <p>Last update time:   <g:fieldValue bean="${time}" field="heartbeat"/></p>
     <table border="1">
       <tr>
         <th>Symbol</th>

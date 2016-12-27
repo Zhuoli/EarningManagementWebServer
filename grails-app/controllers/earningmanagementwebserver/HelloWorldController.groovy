@@ -12,8 +12,12 @@ class HelloWorldController {
 //        def share = Stock.findBySymbolLike('JD');
 
         def shares = Stock.list()
+        def heartBeat = Heartbeat.findByName("HeartBeat");
 
-        [viewShares : shares ]
+        [
+                viewShares: shares,
+                time      : heartBeat
+        ]
 
     }
 
@@ -22,8 +26,8 @@ class HelloWorldController {
     }
 
 
-    def stockResult(){
+    def stockResult() {
         def share = Stock.findBySymbolLike(params.symbol);
-        [ viewShare:share ]
+        [viewShare: share]
     }
 }
