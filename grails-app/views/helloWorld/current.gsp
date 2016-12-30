@@ -16,7 +16,8 @@
       </tr>
         <g:each in="${viewShares}" var="viewShare">
             <tr>
-                <td><g:fieldValue bean="${viewShare}" field="symbol"/></td>
+
+                <td><a href="http://www.nasdaq.com/symbol/${viewShare.symbol}">${viewShare.symbol}</a></td>
                 <td><g:fieldValue bean="${viewShare}" field="shares"/></td>
                 <td><g:fieldValue bean="${viewShare}" field="currentPrice"/></td>
                 <td><g:fieldValue bean="${viewShare}" field="reportDate"/></td>
