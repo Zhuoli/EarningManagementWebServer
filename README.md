@@ -7,6 +7,8 @@ WebServer for Earning Management
 $grails war
 $java -jar build/libs/EarningManagementWebServer-0.1.war
 
+* Install java:  sudo apt-get install openjdk-8-jdk
+
 * [How to install grails](http://www.tothenew.com/blog/grails-3-and-deployment-to-tomcat-container/)
 
 * [How to set up Tomcat Server](https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04) 
